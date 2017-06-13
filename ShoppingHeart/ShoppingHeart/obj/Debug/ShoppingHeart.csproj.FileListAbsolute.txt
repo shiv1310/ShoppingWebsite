@@ -1,0 +1,5 @@
+D:\vs_shiv\ShoppingHeart\ShoppingHeart\bin\ShoppingHeart.dll
+D:\vs_shiv\ShoppingHeart\ShoppingHeart\bin\ShoppingHeart.pdb
+D:\vs_shiv\ShoppingHeart\ShoppingHeart\obj\Debug\ShoppingHeart.dll
+D:\vs_shiv\ShoppingHeart\ShoppingHeart\obj\Debug\ShoppingHeart.pdb
+D:\vs_shiv\ShoppingHeart\ShoppingHeart\obj\Debug\ShoppingHeart.csprojResolveAssemblyReference.cache

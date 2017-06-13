@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ShoppingHeart.Admin.AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            width: 900px;
+            align:center;
+        }
+        .style2
+        {
+            width: 100%;
+            height: 110px;
+        }
+        .style3
+        {
+            width: 108px;
+        }
+        .style4
+        {
+            font-family: "Comic Sans MS";
+            color: #0000FF;
+        }
+        .style5
+        {
+            width: 674px;
+        }
+        .style6
+        {
+            height: 38px;
+        }
+        .style7
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="width: 989px;" >
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdatePanel ID="AdminUpdatePanel" runat="server">
+    <ContentTemplate>
+    <table align="center" class="style1" 
+        style="width:100%; height: auto; right: 15%; left: 15px; bottom: auto; top: auto;">
+        <tr>
+            <td style="top: 10%; right: 15%; left: 15%">
+                <table class="style2">
+                    <tr>
+                        <td class="style3">
+                            <asp:Image ID="Image1" runat="server" Height="86px" 
+                                ImageUrl="~/Images/QVcartTrans.png" Width="101px" />
+                        </td>
+                        <td class="style5">
+                            <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="Red" Height="31px" 
+                                Font-Names="Eras Demi ITC" Font-Size="20pt"
+                                Width="229px" onclick="LinkButton1_Click">Shopping Heart</asp:LinkButton>
+                            <span class="style4"><strong><em>
+                            <br />
+                            Shopping is easier here...!!</em></strong></span></td>
+                        <td>
+                            <asp:Image ID="Image2" runat="server" Height="83px" 
+                                ImageUrl="~/Images/Admin-resized-2.jpg" Width="199px" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="top: 10%; right: 15%; left: 15%">
+                <asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/Admin/AddEditCategory.aspx">Category</asp:HyperLink>
+&nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" 
+                    NavigateUrl="~/Admin/AddNewProduct.aspx">Products</asp:HyperLink>
+&nbsp;
+                <asp:HyperLink ID="HyperLink3" runat="server" 
+                    NavigateUrl="~/Admin/Category.aspx">All Categories</asp:HyperLink>
+            &nbsp;
+                <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="#0066FF" 
+                    NavigateUrl="~/Admin/Products.aspx">All Products</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" ForeColor="#0066FF" 
+                    NavigateUrl="~/Admin/UpdatePrduct.aspx">Update product</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink6" runat="server" ForeColor="#0066FF" 
+                    NavigateUrl="~/Admin/CustomerDetails.aspx">CustomerDetails</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="style6" style="top: 10%; right: 15%; left: 15%">
+                <asp:Panel ID="Panel1" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:Panel>
+            </td>
+        </tr>
+        <tr>
+            <td class="style7" style="top: 10%; right: 15%; left: 15%">
+            &copy;
+                copyright :shivpt</td>
+        </tr>
+    </table>
+   </ContentTemplate>
+   </asp:UpdatePanel>
+    </form>
+</body>
+</html>

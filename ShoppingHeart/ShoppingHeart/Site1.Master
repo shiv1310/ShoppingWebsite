@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ShoppingHeart.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style8
+        {
+            width: 101%;
+            height: 334px;
+        }
+        .style9
+        {
+            text-align: center;
+            color: #000000;
+            height: 166px;
+            background-color: #FF6600;
+        }
+        .style10
+        {
+            text-align: center;
+            color: #000000;
+            width: 226px;
+            font-size: xx-large;
+            height: 166px;
+            background-color: #FF6600;
+        }
+        .style11
+        {
+            height: 58px;
+        }
+        .style12
+        {
+            height: 58px;
+            font-size: large;
+            background-color: #FF5050;
+        }
+        .style13
+        {
+            width: 185px;
+        }
+        .style14
+        {
+            height: 58px;
+            width: 960px;
+        }
+        .style15
+        {
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+    <table align="center" class="style8">
+        <tr>
+            <td class="style10" colspan="2">
+                <strong style="text-align: left">Shopping Heart</strong></td>
+            <td class="style9" colspan="2">
+                <asp:Image ID="Image3" runat="server" Height="162px" ImageUrl="~/globe1.jpg" 
+                    style="text-align: left; margin-top: 0px" Width="239px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style12" colspan="4">
+                <strong>DEBIT CARD PAYMENT</strong></td>
+        </tr>
+        <tr>
+            <td class="style13">
+                &nbsp;</td>
+            <td class="style15" colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style13">
+                &nbsp;</td>
+            <td class="style15" colspan="2">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
